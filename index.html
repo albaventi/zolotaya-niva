@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ТРЦ «Золотая Нива»</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Логотип Золотая Нива" height="40">
+    </div>
+    <button class="menu-toggle" aria-label="Открыть меню">&#9776;</button>
+    <nav class="nav-links">
+      <a href="#about">О центре</a>
+      <a href="#stores">Якорные магазины</a>
+      <a href="#vacancy">Вакантные площади</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h1>ТРЦ «Золотая Нива»</h1>
+    <p>Все для покупок и отдыха в одном месте</p>
+  </section>
+
+  <main>
+    <section id="about">
+      <h2>О торговом центре</h2>
+      <p>Современный ТРЦ с комфортной атмосферой, разнообразием магазинов, кафе и зон отдыха.</p>
+      <img src="images/mall.jpg" alt="Интерьер торгового центра" class="content-img">
+    </section>
+
+    <section id="stores">
+      <h2>Якорные магазины</h2>
+      <div class="grid">
+        <a href="https://shop.logos-group.ru/" target="_blank" class="store"><img src="images/stores/logos.png" alt="Logos"></a>
+        <a href="https://galamart.ru/" target="_blank" class="store"><img src="images/stores/galamart.png" alt="Галамарт"></a>
+        <a href="https://mokryinos.ru/" target="_blank" class="store"><img src="images/stores/mokryinos.png" alt="Мокрый нос"></a>
+        <a href="https://ozerki.ru/" target="_blank" class="store"><img src="images/stores/ozerki.png" alt="Озерки"></a>
+        <a href="https://kristioptika.ru/" target="_blank" class="store"><img src="images/stores/kristioptika.png" alt="Kristi Optika"></a>
+        <a href="https://www.citilink.ru/" target="_blank" class="store"><img src="images/stores/citilink.png" alt="Ситилинк"></a>
+        <a href="http://www.makkon.ru/" target="_blank" class="store"><img src="images/stores/makkon.png" alt="Makkon"></a>
+      </div>
+    </section>
+
+    <section id="vacancy">
+      <h2>Вакантные площади</h2>
+      <p>Интересует аренда? Оставьте заявку.</p>
+      <form>
+        <input type="text" placeholder="Имя" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Комментарий"></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+
+    <section id="reviews">
+      <h2>Отзывы</h2>
+      <div class="reviews">
+        <div class="review">«Удобно для всей семьи»</div>
+        <div class="review">«Много кафе и магазинов»</div>
+        <div class="review">«Современно и чисто»</div>
+      </div>
+    </section>
+
+    <section id="contacts">
+      <h2>Контакты</h2>
+      <p>📍 Адрес: г. [Город], ул. [Улица, дом]</p>
+      <p>📞 Телефон: +7 (XXX) XXX-XX-XX</p>
+      <p>✉ Email: info@zolotayaniva.ru</p>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CCUuYFAbhB"
+              width="100%" height="260" frameborder="0"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 ТРЦ «Золотая Нива»</p>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    btn.addEventListener('click', () => nav.classList.toggle('active'));
+  </script>
+</body>
+</html>
